@@ -29,12 +29,10 @@ def triangle_area(b, hb):
 def circle_area(radius):
       return pi * (radius * radius)
     
-def polygon_area(perimiter, apothem):
-      return (perimiter * apothem) / 2
+def polygon_area(perimeter, apothem):
+      return (perimeter * apothem) / 2
     
-def trapeziod_area(height, base1, base2=None):
-      if (base2 == None):
-            base2 = base1
+def trapeziod_area(height, base1, base2):
       return ((base1 + base2) / 2) * height
 
 # Distance between 2 points
