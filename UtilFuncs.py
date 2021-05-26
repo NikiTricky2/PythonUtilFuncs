@@ -3,6 +3,22 @@ import math as m
 pi = m.pi
 e = m.e
 
+#Perimiters
+def square_perimiter(side):
+      return side * 4
+  
+def triangle_area(a, b, c):
+      return a + b + c
+    
+def circle_perimiter(radius):
+      return 2 * pi * radius
+    
+def polygon_perimiter(side_len, sides):
+      return side_len * sides
+    
+def trapezoid_perimiter(a, b, c, d):
+      return a + b + c + d
+
 #Areas
 def square_area(side):
       return side * side
