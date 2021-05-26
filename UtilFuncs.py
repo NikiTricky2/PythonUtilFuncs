@@ -41,6 +41,25 @@ def polygon_area(perimeter, apothem):
 def trapeziod_area(height, base1, base2):
       return ((base1 + base2) / 2) * height
 
-# Distance between 2 points
+#Volume
+def cube_volume(edge):
+      return m.pow(edge, 3)
+    
+def sprism_volume(base_edge, height):
+      return base_edge * base_edge * height
+    
+def pyramid_volume(base_length, base_width, height):
+      return (base_length * base_width * height) / 3
+    
+def cone_volume(radius, height):
+      return pi * radius * radius * (height / 3)
+    
+def sphere_volume(radius):
+      return (4 / 3) * pi * m.pow(radius, 3)
+    
+def cylinder_volume(radius, height):
+      return radius * radius * pi * height
+
+#Distance between 2 points
 def dist(point1, point2=(0, 0)):
   return m.sqrt(m.pow(point1[0]-point2[0], 2) + m.pow(point1[1]-point2[1], 2))
